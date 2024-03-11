@@ -1,0 +1,23 @@
+.profile-imge img{width: 150px !important;height: 150px !important}.profile-imge{width: 150px !important;border-radius: 100%;position: relative;overflow: hidden}.camra-icon{position: absolute;bottom: 0px;font-size: 24px;background: #80808087;width: 100%;padding: 10px 0px;right: 0;text-align: center;display: flex}.user-bio{display: flex;flex-direction: column;justify-content: space-between;padding:0px 20px;margin-bottom:20px}.main-header{border-bottom: 2px solid #427EC7}.main-ftr{border-top: 2px solid #427EC7}.profile-data{display: flex!important;flex-direction: column;justify-content: flex-start;gap: 6%;width: 48%;float:left;box-shadow: 0px 0px 8px 1px #7e7e7e}.user-title-name{background: #FAFAFA;padding: 14px 20px;border-radius: 8px 8px 0px 0px}.live-icon{right: 45px;position: absolute;background-color: #427EC7;width: 20px;height: 20px;top: 3px}.container{max-width: 1280px !important;margin: 0 auto}.main-profile-image{display: flex;justify-content: space-between;padding: 0px 20px}.main-profile-grid{gap:4%}.error-succes{float: right}.bio-contn{padding: 0px 20px}label.edit-icon{padding: 10px;background: #427EC7;width: auto;border-radius: 4px;color: #fff;cursor: pointer;margin-bottom: 10px}.main-profile-image .table-buttons{margin-top: 20px;display: flex;flex-direction: column}
+.usercontent {
+    margin-top: 20px;
+}
+.userTitle span {
+    font-size: 14px;
+}
+@media screen and (max-width:767px) {
+    .main-profile-grid div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .main-profile-grid {
+        display: block !important;
+    }
+    .profile-imge {
+        width:200px !important;
+    }
+    .main-profile-image .table-buttons {
+        display: block !important;
+        text-align: right !important;
+    }
+}

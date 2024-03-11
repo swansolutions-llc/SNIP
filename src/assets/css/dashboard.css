@@ -1,0 +1,181 @@
+.dashboard-left-side{background: #202938;padding: 40px 0px 20px 0px}.dashboard-logo{padding: 0px 20px 0px 20px;margin-bottom: 20px}.admin-menu-icon{padding: 15px 20px 0px 20px}.admin-account .account-icon{margin-bottom: 10px}.admin-menu-icon h3, .admin-account h3{margin: 0}.sidebar-itm:hover,.side-dr-item span:hover {background: #3A77B9 !important;color: #fff !important}.sidebar-itm{padding: 14px 20px}.sidebar-itm span{width:95%}.sidebar-itm{flex-wrap: wrap} .sidebar-itm .dropdown-icon, .sidebar-itm .dropdown-menu{width:100% !important}.sidebar-itm .dropdown-icon{width:5%}.dash-sidebar-item{margin-top: 20px}.admin-account a{width:100%;}.admin-account{position: relative; margin-top:auto;}.stats-icon{width: 50px}.stats-text h6{font-size: 24px;font-family: 'circular';font-weight: 400 !important}.stats-box-class{background-color: #202938;border: 1px solid #202938}.evnet-line-chart{border: 1px solid;margin-top: 40px;padding: 30px 20px;border-radius: 10px}.evnet-line-chart canvas{background-color: #fff;margin-top: 30px;border-radius: 6px}.edit-event-main input{margin-top: 10px} .active-item .sidebar-itm, .active-item .side-dr-item span, .side-dr-item.active {background: #3A77B9;}
+
+.sidebar-itm {
+    animation: slideIn 0.5s ease-out;
+}
+.edit_scc_recipe textarea {
+  padding: 10px;
+  margin-top: 10px;
+}
+.current-image-container video {
+  width: 100%;
+  max-height: 200px;
+}
+.video_tc video {
+  width: 100%;
+  height: 100px;
+}
+div#myTable_filter {
+  margin-bottom: 24px;
+}
+.dist-images img {
+  width: 120px;
+  height: 64px;
+  object-fit: scale-down;
+}
+.fc-header-toolbar.fc-toolbar.fc-toolbar-ltr button {
+  background: #3A79B6 !important;
+}
+.fc-license-message {
+  display: none;
+}
+.dropdown_item_slide {
+  animation: slideIn 0.5s ease-out; 
+}
+.slide_out_dropdown {
+  animation: slideout 0.5s ease-out; 
+}
+.dist-add {
+  background: #3A77B9;
+  font-size: 18px;
+  float: right;
+}
+.side-dr-item {
+  flex-wrap: nowrap !important;
+}
+
+/* User Dashboard start*/
+.user_dashboard h1 {
+  font-size: 38px;
+}
+/* SearchBar */
+.search-bar button {
+  background: #3A77B9;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  width: 48px;
+  height: 48px;
+  border-radius: 0px 5px 5px 0px;
+}
+.search-bar input {
+  border-radius: 5px 0px 0px 5px;
+  height: 48px;
+  margin-right: -5px;
+}
+/* User Dashboard end*/
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+@keyframes slideout {
+  from {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50);
+  }
+}
+
+
+/*  */
+/* Add these styles in your CSS file or use a CSS-in-JS solution */
+
+.dashboard-left-side {
+  width: 100%;
+  display:flex;
+  flex-direction:column;
+  max-width: 240px; /* Set a maximum width for the sidebar */
+  min-width: 64px; /* Set a minimum width for the sidebar */
+  background-color: #2d3748;
+  color: white;
+  transition: all 0.3s;
+  overflow-x: auto;
+}
+button.toggle-sidebar-button {
+  display:none;
+}
+@media screen and (max-width: 900px) {
+
+  .stats-box-class {
+      width: 46.5%;
+      float: left;
+  }
+  div#myTable_length label {
+      margin-bottom: 10px !important;
+  }
+  div#myTable_filter label {
+      margin-bottom: 15px !important;
+  }
+  .evnet-line-chart {
+      margin-top: 20px;
+      padding: 30px 10px;
+      width: 100%;
+      float: left;
+  }
+  .main-stats-boxes{
+      grid: none;
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .dashboard-left-side {
+    position: fixed;
+    top: 0;
+    left: -240px;
+    height: 100%;
+    display:block;
+    z-index: 1000;
+    overflow-x: hidden;
+    transition: all 0.3s;
+  }
+  button.toggle-sidebar-button {
+    position: absolute;
+    display:block !important;
+    background: #3A77B9;
+    color: #fff;
+    font-size: 20px;
+    left: 32px;
+    z-index: 100000;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+}
+.all-events-download, .all-user-download {
+  text-align: left;
+}
+.dashboard-logo {
+  margin-top: 15px !important;
+}
+  .dashboard-left-side.active {
+    left: 0;
+  }
+
+  .admin-event {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width:600px) {
+  .main-stats-boxes.grid.grid-cols-3.gap-4 {
+      grid: none;
+      display:block !important;
+  }
+  .user_dashboard h1 {
+    font-size: 28px;
+  }
+  .stats-box-class {
+    width:100%;
+    margin-bottom:20px;
+  }
+}
